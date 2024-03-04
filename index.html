@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <title>Criptografia de texto</title>
+    
+</head>
+<body>
+    <header></header>
+    <main class="apresentacao">
+        <section  class="apresentacao__section">
+            
+            <div>
+                <h1 class="apresentacao__titulo" >
+                </h1>
+            
+                <h3 class="apresentacao__titulo-2">Insira o texto que deseja criptografar ou descriptografar:</h3>
+            </div>    
+            
+            <div>
+                <button onclick="apresentacaoBotaoCriptografar()"    class="apresentacao__botao-criptografar">Criptografar</button>
+
+                <button onclick="apresentacaoBotaoDescriptografar()"  class="apresentacao__botao-descriptografar" >Descriptografar</button>
+
+                <button onclick="copy()"  class="apresentacao__botao-copiar">Copiar</button>
+            </div>
+        
+        </section>
+
+        <div>
+            <textarea class="apresentacao__textarea" cols="50" rows="30" id="meuTextarea" onfocus="this.value=''"></textarea>
+        
+            <textarea class="apresentacao__textarea-retangulo" cols="30" rows="30" id="meuTextarea" onfocus="this.value=''"></textarea>
+        </div>
+        
+        <div class="apresentacao__logo-alura">
+            <img src="Frame 6.png" alt="Logo da alura">
+        </div>
+            
+    </main>
+
+    <footer class="apresentacao__texto-footer">
+        <p id="output">Desenvolvido por<strong class="destaque-footer"><i> Ronie Peterson Lopes.</i></strong></p>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
